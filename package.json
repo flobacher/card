@@ -1,0 +1,43 @@
+{
+  "name": "flobacher",
+  "version": "1.0.0",
+  "description": "A personal card for Florian Bacher (@flobacher)",
+  "main": "/bin/card.js",
+  "bin": {
+    "flobacher": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flobacher/flobacher.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run fix && node build.js",
+    "start": "node ./bin/card.js",
+    "fix": "npm run fix:style && npm run fix:errors",
+    "fix:style": "prettier --write \"**/*.js\"",
+    "fix:errors": "eslint --fix \"**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Flo Bacher <hello@flobacher.net> (https://flobacher.net)",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "eslint": "^5.11.1",
+    "eslint-config-prettier": "^3.3.0",
+    "prettier": "^1.15.3"
+  }
+}
