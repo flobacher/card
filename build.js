@@ -37,7 +37,6 @@ const data = {
 const newline = '\n';
 const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
-const opensourcing = `${data.labelOpenSource}  ${data.opensource}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
@@ -52,8 +51,6 @@ const output =
   newline + // Add one whole blank line
   working +
   newline + // data.labelWork + data.work
-  opensourcing +
-  newline +
   newline + // data.labelOpenSource + data.opensource
   twittering +
   newline + // data.labelTwitter + data.twitter
